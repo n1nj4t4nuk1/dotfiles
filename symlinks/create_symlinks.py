@@ -10,6 +10,7 @@ def create_symlinks_from_json(json_file):
     for entry in data:
         where = entry.get("link")
         file_relative_path = entry.get("file")
+        force = entry.get("force", False)  # Default to False if not specified
 
         # Get the absolute path by combining DFOX_PATH and the relative path
         dfox_path = os.environ.get("DFOX_PATH")
@@ -20,6 +21,23 @@ def create_symlinks_from_json(json_file):
             # Generate the symlink at the specified location
             where = where.replace('~', os.path.expanduser("~"))
             symlink_path = os.path.join(where, os.path.basename(file_path))
+            
+            # Check if symlink already exists
+            if os.path.exists(symlink_path) or os.path.islink(symlink_path):
+                if force:
+                    # Remove existing file/symlink if force is true
+                    if os.path.islink(symlink_path):
+                        os.unlink(symlink_path)
+                        print(f"Removed existing symlink at {symlink_path}")
+                    else:
+                        os.remove(symlink_path)
+                        print(f"Removed existing file at {symlink_path}")
+                else:
+                    print(f"Warning: Symbolic link already exists at {symlink_path}, skipping...")
+                    continue
+            
+            # Create the directory if it doesn't exist
+            os.makedirs(where, exist_ok=True)
             os.symlink(file_path, symlink_path)
             print(f"Symbolic link created at {symlink_path}")
         else:
