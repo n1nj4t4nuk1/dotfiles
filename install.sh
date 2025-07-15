@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Set DFOX_PATH if not already defined
+if [ -z "$DFOX_PATH" ]; then
+    export DFOX_PATH="$HOME/.dotfiles"
+    echo "DFOX_PATH not set, using default: $DFOX_PATH"
+fi
+
 # Check if python3 command exists
 if command -v python3 &>/dev/null; then
     echo "Python 3 is installed."
@@ -25,3 +31,7 @@ echo '# - - - - - - - - - - DFOX - - - - - - - - - -' >> $HOME/.zshrc
 echo 'export DFOX_PATH="$HOME/.dotfiles"'             >> $HOME/.zshrc
 echo 'source $DFOX_PATH/init.sh'                      >> $HOME/.zshrc
 echo '# - - - - - - - - - - - - - - - - - - - - - -'  >> $HOME/.zshrc
+
+# Create symbolic links
+echo "Creating symbolic links..."
+bash $DFOX_PATH/symlinks.sh
