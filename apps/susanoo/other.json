@@ -21,7 +21,7 @@
     {
       "name": "Visual Studio Code",
       "id": "code",
-      "script": "vscode/install.sh",
+      "script": "vscode.sh",
       "description": "Microsoft's cross-platform source code editor"
     }
   ]
