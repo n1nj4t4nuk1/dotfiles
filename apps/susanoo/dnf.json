@@ -17,6 +17,12 @@
       "id": "btop",
       "install-text": "btop",
       "description": "Resource monitor showing CPU, memory, disks, network and processes"
+    },
+    {
+      "name": "fzf",
+      "id": "fzf",
+      "install-text": "fzf",
+      "description": "General-purpose command-line fuzzy finder"
     }
   ]
 }
