@@ -1,0 +1,10 @@
+{
+  "packages": [
+    {
+      "name": "GNOME Extensions CLI",
+      "id": "gnome-extensions-cli",
+      "install-text": "gnome-extensions-cli",
+      "description": "Command-line tool to manage GNOME Shell extensions"
+    }
+  ]
+}
