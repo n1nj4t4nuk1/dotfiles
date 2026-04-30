@@ -23,6 +23,12 @@
       "id": "fzf",
       "install-text": "fzf",
       "description": "General-purpose command-line fuzzy finder"
+    },
+    {
+      "name": "bat",
+      "id": "bat",
+      "install-text": "bat",
+      "description": "cat clone with syntax highlighting and Git integration"
     }
   ]
 }
