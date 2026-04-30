@@ -1,0 +1,67 @@
+{
+  "packages": [
+    {
+      "name": "Telegram",
+      "id": "org.telegram.desktop",
+      "install-text": "org.telegram.desktop",
+      "repository": "flathub",
+      "description": "Cloud-based instant messaging app"
+    },
+    {
+      "name": "Brave Browser",
+      "id": "com.brave.Browser",
+      "install-text": "com.brave.Browser",
+      "repository": "flathub",
+      "description": "Privacy-focused Chromium-based web browser"
+    },
+    {
+      "name": "OnlyOffice Desktop Editors",
+      "id": "org.onlyoffice.desktopeditors",
+      "install-text": "org.onlyoffice.desktopeditors",
+      "repository": "flathub",
+      "description": "Office suite compatible with Microsoft Office formats"
+    },
+    {
+      "name": "Discord",
+      "id": "com.discordapp.Discord",
+      "install-text": "com.discordapp.Discord",
+      "repository": "flathub",
+      "description": "Voice, video and text chat for communities"
+    },
+    {
+      "name": "Thunderbird",
+      "id": "org.mozilla.Thunderbird",
+      "install-text": "org.mozilla.Thunderbird",
+      "repository": "flathub",
+      "description": "Mozilla email, calendar and chat client"
+    },
+    {
+      "name": "Tor Browser Launcher",
+      "id": "org.torproject.torbrowser-launcher",
+      "install-text": "org.torproject.torbrowser-launcher",
+      "repository": "flathub",
+      "description": "Launcher for the Tor anonymity network browser"
+    },
+    {
+      "name": "Hidamari",
+      "id": "io.github.jeffshee.Hidamari",
+      "install-text": "io.github.jeffshee.Hidamari",
+      "repository": "flathub",
+      "description": "Video and animated wallpaper for GNOME"
+    },
+    {
+      "name": "Obsidian",
+      "id": "md.obsidian.Obsidian",
+      "install-text": "md.obsidian.Obsidian",
+      "repository": "flathub",
+      "description": "Markdown-based knowledge base and note-taking app"
+    },
+    {
+      "name": "Extension Manager",
+      "id": "com.mattjakeman.ExtensionManager",
+      "install-text": "com.mattjakeman.ExtensionManager",
+      "repository": "flathub",
+      "description": "Browse and manage GNOME Shell extensions"
+    }
+  ]
+}
