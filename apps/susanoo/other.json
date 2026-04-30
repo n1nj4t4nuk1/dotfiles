@@ -17,6 +17,12 @@
       "id": "claude",
       "script": "claude.sh",
       "description": "Anthropic's official CLI agent for software engineering tasks"
+    },
+    {
+      "name": "Visual Studio Code",
+      "id": "code",
+      "script": "vscode/install.sh",
+      "description": "Microsoft's cross-platform source code editor"
     }
   ]
 }
