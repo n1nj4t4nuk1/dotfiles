@@ -5,5 +5,42 @@
     "version": "44",
     "edition": "Workstation Edition",
     "pretty_name": "Fedora Linux 44 (Workstation Edition)"
+  },
+  "hardware": {
+    "vendor": "Gigabyte Technology Co., Ltd.",
+    "model": "Z270-HD3P",
+    "chassis": "desktop",
+    "cpu": {
+      "model": "Intel Core i5-7500",
+      "cores": 4,
+      "arch": "x86_64"
+    },
+    "memory_gb": 16,
+    "gpu": [
+      {
+        "vendor": "NVIDIA",
+        "model": "GeForce GTX 1070"
+      }
+    ],
+    "storage": [
+      {
+        "device": "sda",
+        "model": "Kingston SUV400 S37120G",
+        "size_gb": 120,
+        "type": "ssd"
+      },
+      {
+        "device": "sdb",
+        "model": "WDC WD20EZRZ-00Z5HB0",
+        "size_gb": 2000,
+        "type": "hdd"
+      },
+      {
+        "device": "sdc",
+        "model": "Kingston SA400 S37240G",
+        "size_gb": 240,
+        "type": "ssd"
+      }
+    ]
   }
 }
