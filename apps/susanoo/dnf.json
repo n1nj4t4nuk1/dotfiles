@@ -52,7 +52,13 @@
       "name": "Zsh",
       "id": "zsh",
       "install-text": "zsh",
-      "description": "Powerful interactive shell with advanced completion and theming"
+      "description": "Powerful interactive shell with advanced completion and theming",
+      "post-install-commands": [
+        {
+          "command": "chsh -s $(which zsh)",
+          "description": "Sets zsh as the default login shell for the current user"
+        }
+      ]
     }
   ]
 }
