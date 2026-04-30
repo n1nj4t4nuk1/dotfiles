@@ -31,11 +31,19 @@ Package manifests (`dnf.json`, `flatpak.json`, `pip.json`, `gext.json`) share th
       "id": "canonical package id",
       "install-text": "what gets passed to the install command",
       "repository": "optional, e.g. flathub",
-      "description": "short description"
+      "description": "short description",
+      "post-install-commands": [
+        {
+          "command": "shell command to run after install",
+          "description": "what the command does"
+        }
+      ]
     }
   ]
 }
 ```
+
+`post-install-commands` is optional. Use it for steps that need to run after installing the package (e.g. `chsh` to change default shell, enabling a systemd unit, etc.).
 
 `other.json` uses `script` instead of `install-text`, pointing to a file inside `other/`:
 
