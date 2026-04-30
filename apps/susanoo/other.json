@@ -23,6 +23,12 @@
       "id": "code",
       "script": "vscode.sh",
       "description": "Microsoft's cross-platform source code editor"
+    },
+    {
+      "name": "NetBird",
+      "id": "netbird",
+      "script": "netbird.sh",
+      "description": "WireGuard-based zero-config private network (daemon + GUI tray client)"
     }
   ]
 }
