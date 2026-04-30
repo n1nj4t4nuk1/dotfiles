@@ -11,6 +11,12 @@
       "id": "python3-pip",
       "install-text": "python3-pip",
       "description": "Package manager for Python 3"
+    },
+    {
+      "name": "btop",
+      "id": "btop",
+      "install-text": "btop",
+      "description": "Resource monitor showing CPU, memory, disks, network and processes"
     }
   ]
 }
