@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "Steam",
+      "id": "steam",
+      "script": "steam.sh",
+      "description": "Gaming platform, launcher and store from Valve"
+    },
+    {
+      "name": "GitHub CLI",
+      "id": "gh",
+      "script": "gh.sh",
+      "description": "Official GitHub command-line tool"
+    }
+  ]
+}
