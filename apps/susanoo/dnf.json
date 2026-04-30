@@ -65,6 +65,12 @@
       "id": "akmod-nvidia",
       "install-text": "akmod-nvidia",
       "description": "Auto-rebuilding NVIDIA proprietary driver from RPM Fusion nonfree (requires the rpmfusion-nonfree repo, enabled by other/steam.sh)"
+    },
+    {
+      "name": "NVIDIA CUDA userspace libraries",
+      "id": "xorg-x11-drv-nvidia-cuda",
+      "install-text": "xorg-x11-drv-nvidia-cuda",
+      "description": "Userspace CUDA libraries (libcuda, OpenCL ICD) required by ML/compute apps such as Immich, Frigate, Ollama"
     }
   ]
 }
