@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "Vim",
+      "id": "vim",
+      "install-text": "vim",
+      "description": "Modal text editor for the terminal"
+    },
+    {
+      "name": "pip",
+      "id": "python3-pip",
+      "install-text": "python3-pip",
+      "description": "Package manager for Python 3"
+    }
+  ]
+}
