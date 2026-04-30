@@ -11,6 +11,12 @@
       "id": "gh",
       "script": "gh.sh",
       "description": "Official GitHub command-line tool"
+    },
+    {
+      "name": "Claude Code",
+      "id": "claude",
+      "script": "claude.sh",
+      "description": "Anthropic's official CLI agent for software engineering tasks"
     }
   ]
 }
