@@ -1,0 +1,9 @@
+{
+  "hostname": "susanoo",
+  "os": {
+    "name": "Fedora Linux",
+    "version": "44",
+    "edition": "Workstation Edition",
+    "pretty_name": "Fedora Linux 44 (Workstation Edition)"
+  }
+}
