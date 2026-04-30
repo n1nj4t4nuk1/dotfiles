@@ -29,6 +29,18 @@
       "id": "bat",
       "install-text": "bat",
       "description": "cat clone with syntax highlighting and Git integration"
+    },
+    {
+      "name": "make",
+      "id": "make",
+      "install-text": "make",
+      "description": "GNU build automation tool that runs Makefile recipes"
+    },
+    {
+      "name": "Neovim",
+      "id": "neovim",
+      "install-text": "neovim",
+      "description": "Hyperextensible Vim-based text editor focused on extensibility and usability"
     }
   ]
 }
