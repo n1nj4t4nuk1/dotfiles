@@ -59,6 +59,12 @@
           "description": "Sets zsh as the default login shell for the current user"
         }
       ]
+    },
+    {
+      "name": "NVIDIA akmod driver",
+      "id": "akmod-nvidia",
+      "install-text": "akmod-nvidia",
+      "description": "Auto-rebuilding NVIDIA proprietary driver from RPM Fusion nonfree (requires the rpmfusion-nonfree repo, enabled by other/steam.sh)"
     }
   ]
 }
