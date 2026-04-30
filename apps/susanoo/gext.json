@@ -1,0 +1,28 @@
+{
+  "packages": [
+    {
+      "name": "User Themes",
+      "id": "user-theme@gnome-shell-extensions.gcampax.github.com",
+      "install-text": "user-theme@gnome-shell-extensions.gcampax.github.com",
+      "description": "Allows GNOME Shell to load custom themes from the user directory"
+    },
+    {
+      "name": "ArcMenu",
+      "id": "arcmenu@arcmenu.com",
+      "install-text": "arcmenu@arcmenu.com",
+      "description": "Application menu replacement for GNOME Shell"
+    },
+    {
+      "name": "Dash to Panel",
+      "id": "dash-to-panel@jderose9.github.com",
+      "install-text": "dash-to-panel@jderose9.github.com",
+      "description": "Merges the dash and top panel into a single taskbar"
+    },
+    {
+      "name": "Caffeine",
+      "id": "caffeine@patapon.info",
+      "install-text": "caffeine@patapon.info",
+      "description": "Prevents auto-suspend and screen saver from activating"
+    }
+  ]
+}
