@@ -47,6 +47,12 @@
       "id": "nmap",
       "install-text": "nmap",
       "description": "Network exploration tool and security/port scanner"
+    },
+    {
+      "name": "Zsh",
+      "id": "zsh",
+      "install-text": "zsh",
+      "description": "Powerful interactive shell with advanced completion and theming"
     }
   ]
 }
