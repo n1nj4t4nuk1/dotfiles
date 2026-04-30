@@ -41,6 +41,12 @@
       "id": "neovim",
       "install-text": "neovim",
       "description": "Hyperextensible Vim-based text editor focused on extensibility and usability"
+    },
+    {
+      "name": "Nmap",
+      "id": "nmap",
+      "install-text": "nmap",
+      "description": "Network exploration tool and security/port scanner"
     }
   ]
 }
