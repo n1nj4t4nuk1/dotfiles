@@ -1,3 +1,7 @@
+# PATH: prepend user bins (deduped via typeset -U)
+typeset -U path
+path=(~/.local/bin ~/bin $path)
+
 # History
 HISTFILE=~/.histfile
 HISTSIZE=10000
