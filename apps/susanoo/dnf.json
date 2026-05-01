@@ -55,7 +55,7 @@
       "description": "Powerful interactive shell with advanced completion and theming",
       "post-install-commands": [
         {
-          "command": "chsh -s $(which zsh)",
+          "command": "chsh -s /usr/bin/zsh",
           "description": "Sets zsh as the default login shell for the current user"
         }
       ]
