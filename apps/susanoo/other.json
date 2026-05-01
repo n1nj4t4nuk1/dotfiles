@@ -41,6 +41,12 @@
       "id": "starship",
       "script": "starship.sh",
       "description": "Minimal, blazing-fast cross-shell prompt (installed to /usr/local/bin via official installer)"
+    },
+    {
+      "name": "MesloLGS Nerd Font",
+      "id": "nerdfont",
+      "script": "nerdfont.sh",
+      "description": "Patched Meslo font with powerline/devicon glyphs needed by starship (installed to ~/.local/share/fonts)"
     }
   ]
 }
