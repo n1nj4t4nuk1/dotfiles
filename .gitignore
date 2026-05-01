@@ -27,6 +27,9 @@ desktop.ini
 id_rsa
 id_ed25519
 
+# Antidote — compiled plugin bundle, regenerated from .zsh_plugins.txt
+dots/zsh/.zsh_plugins.zsh
+
 # Claude Code
 .claude/settings.local.json
 .claude/projects/
