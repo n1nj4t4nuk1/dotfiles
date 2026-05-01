@@ -4,6 +4,11 @@ set -euo pipefail
 # MesloLGS Nerd Font — recommended by powerlevel10k, works great with starship
 # Installed at user level under ~/.local/share/fonts (no sudo required)
 
+if fc-list | grep -q "MesloLGS NF"; then
+  echo "MesloLGS NF already installed, skipping"
+  exit 0
+fi
+
 FONT_DIR="${HOME}/.local/share/fonts"
 BASE_URL="https://github.com/romkatv/powerlevel10k-media/raw/master"
 
