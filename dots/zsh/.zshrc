@@ -1,6 +1,6 @@
 # PATH: prepend user bins (deduped via typeset -U)
 typeset -U path
-path=(~/.local/bin ~/bin $path)
+path=(~/.local/bin ~/bin ~/.cargo/bin $path)
 
 # History
 HISTFILE=~/.histfile
