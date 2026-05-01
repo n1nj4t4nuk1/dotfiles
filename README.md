@@ -15,11 +15,11 @@ apps/
     other/          # the scripts referenced from other.json
 dots/
   <tool>/           # config files for a given tool, symlinked into $HOME or $XDG_CONFIG_HOME
-systems/
+sysinfo/
   <host>.json       # host metadata (OS, version, hostname, hardware)
 ```
 
-Each host gets its own folder under `apps/` and its own metadata file under `systems/`. Currently tracked: `susanoo` (Fedora 44 Workstation).
+Each host gets its own folder under `apps/` and its own metadata file under `sysinfo/`. Currently tracked: `susanoo` (Fedora 44 Workstation).
 
 `dots/` is host-agnostic: configuration files live here and are symlinked into the user's home (e.g. `~/.zshrc → ~/.dotfiles/dots/zsh/.zshrc`) or into `~/.config/` (e.g. `~/.config/starship.toml → ~/.dotfiles/dots/starship/starship.toml`).
 
