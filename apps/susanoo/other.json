@@ -29,6 +29,12 @@
       "id": "netbird",
       "script": "netbird.sh",
       "description": "WireGuard-based zero-config private network (daemon + GUI tray client)"
+    },
+    {
+      "name": "Antidote",
+      "id": "antidote",
+      "script": "antidote.sh",
+      "description": "Minimal zsh plugin manager (installed to ~/.antidote, sourced from .zshrc)"
     }
   ]
 }
