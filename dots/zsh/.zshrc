@@ -14,3 +14,6 @@ antidote load ~/.dotfiles/dots/zsh/.zsh_plugins.txt
 
 # Starship prompt
 eval "$(starship init zsh)"
+
+# Dotfiles entry point (aliases, functions, env, etc.)
+source ~/.dotfiles/init.sh
