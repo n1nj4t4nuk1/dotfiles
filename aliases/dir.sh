@@ -1,5 +1,5 @@
 # Directory utilities
-alias la="ll -a"
+alias la="ls -la"
 
 alias ".."="cd .."
 alias "..."="cd ../.."
