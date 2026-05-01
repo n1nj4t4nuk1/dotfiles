@@ -5,24 +5,56 @@ Personal configuration and software inventory tracked per host.
 ## Layout
 
 ```
+init.sh                # entry point: sourced from .zshrc, sources everything else
+envvar.sh              # exported env vars (DOTFILES_DIR, EDITOR, …)
+
+aliases/
+  init.sh              # sources each <topic>.sh below
+  <topic>.sh           # alias bundles (git.sh, dir.sh, …)
+
+functions/
+  init.sh              # sources each <name>.sh below
+  <name>.sh            # shell functions that change shell state (fcd, fkill, …)
+
+dots/
+  <tool>/              # config files for a given tool, symlinked into $HOME
+                       # or $XDG_CONFIG_HOME (zsh, starship, …)
+
 apps/
   <host>/
-    dnf.json        # packages installed via dnf
-    flatpak.json    # flatpak apps
-    pip.json        # python packages
-    gext.json       # GNOME shell extensions
-    other.json      # apps installed via custom shell scripts
+    dnf.json           # packages installed via dnf
+    flatpak.json       # flatpak apps
+    pip.json           # python packages
+    gext.json          # GNOME shell extensions
+    other.json         # custom installs and setup steps (see below)
     other/
       <id>/
-        install.sh  # entry-point install script for that software
-                    # (other helper scripts can live alongside it later)
-dots/
-  <tool>/           # config files for a given tool, symlinked into $HOME or $XDG_CONFIG_HOME
+        install.sh     # entry-point for "packages" entries
+        setup.sh       # entry-point for "setup" entries
+
 sysinfo/
-  <host>.json       # host metadata (OS, version, hostname, hardware)
+  <host>.json          # host metadata (OS, hostname, hardware)
 ```
 
 Each host gets its own folder under `apps/` and its own metadata file under `sysinfo/`. Currently tracked: `susanoo` (Fedora 44 Workstation).
+
+## How it loads
+
+`.zshrc` sources `~/.dotfiles/init.sh`. The chain from there:
+
+```
+.zshrc
+  └─ init.sh
+       ├─ envvar.sh                  → exports DOTFILES_DIR, ALIASES_DIR, FUNCTIONS_DIR, EDITOR, …
+       ├─ aliases/init.sh
+       │    ├─ aliases/git.sh        → git aliases (gs, gc, gd, …)
+       │    └─ aliases/dir.sh        → dir aliases (la, .., …)
+       └─ functions/init.sh
+            ├─ functions/fcd.sh      → fzf cd picker
+            └─ functions/fkill.sh    → fzf process killer
+```
+
+Env vars load first so aliases and functions can reference `$ALIASES_DIR`, `$FUNCTIONS_DIR`, etc.
 
 `dots/` is host-agnostic: configuration files live here and are symlinked into the user's home (e.g. `~/.zshrc → ~/.dotfiles/dots/zsh/.zshrc`) or into `~/.config/` (e.g. `~/.config/starship.toml → ~/.dotfiles/dots/starship/starship.toml`).
 
