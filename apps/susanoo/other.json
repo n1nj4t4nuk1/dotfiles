@@ -35,6 +35,12 @@
       "id": "antidote",
       "script": "antidote.sh",
       "description": "Minimal zsh plugin manager (installed to ~/.antidote, sourced from .zshrc)"
+    },
+    {
+      "name": "Starship",
+      "id": "starship",
+      "script": "starship.sh",
+      "description": "Minimal, blazing-fast cross-shell prompt (installed to /usr/local/bin via official installer)"
     }
   ]
 }
