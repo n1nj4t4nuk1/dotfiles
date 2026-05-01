@@ -12,7 +12,10 @@ apps/
     pip.json        # python packages
     gext.json       # GNOME shell extensions
     other.json      # apps installed via custom shell scripts
-    other/          # the scripts referenced from other.json
+    other/
+      <id>/
+        install.sh  # entry-point install script for that software
+                    # (other helper scripts can live alongside it later)
 dots/
   <tool>/           # config files for a given tool, symlinked into $HOME or $XDG_CONFIG_HOME
 sysinfo/
@@ -49,13 +52,15 @@ Package manifests (`dnf.json`, `flatpak.json`, `pip.json`, `gext.json`) share th
 
 `post-install-commands` is optional. Use it for steps that need to run after installing the package (e.g. `chsh` to change default shell, enabling a systemd unit, etc.).
 
-`other.json` uses `script` instead of `install-text`, pointing to a file inside `other/`:
+`other.json` uses `scripts` instead of `install-text`. The value is the **folder name** under `other/` containing at least an `install.sh`. Future helper scripts (update, uninstall, etc.) can live in the same folder.
 
 ```json
 {
   "name": "Visual Studio Code",
   "id": "code",
-  "script": "vscode.sh",
+  "scripts": "vscode",
   "description": "Microsoft's cross-platform source code editor"
 }
 ```
+
+The install script for the entry above is at `apps/<host>/other/vscode/install.sh`.

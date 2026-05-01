@@ -3,55 +3,55 @@
     {
       "name": "Steam",
       "id": "steam",
-      "script": "steam.sh",
+      "scripts": "steam",
       "description": "Gaming platform, launcher and store from Valve"
     },
     {
       "name": "GitHub CLI",
       "id": "gh",
-      "script": "gh.sh",
+      "scripts": "gh",
       "description": "Official GitHub command-line tool"
     },
     {
       "name": "Claude Code",
       "id": "claude",
-      "script": "claude.sh",
+      "scripts": "claude",
       "description": "Anthropic's official CLI agent for software engineering tasks"
     },
     {
       "name": "Visual Studio Code",
       "id": "code",
-      "script": "vscode.sh",
+      "scripts": "vscode",
       "description": "Microsoft's cross-platform source code editor"
     },
     {
       "name": "NetBird",
       "id": "netbird",
-      "script": "netbird.sh",
+      "scripts": "netbird",
       "description": "WireGuard-based zero-config private network (daemon + GUI tray client)"
     },
     {
       "name": "Antidote",
       "id": "antidote",
-      "script": "antidote.sh",
+      "scripts": "antidote",
       "description": "Minimal zsh plugin manager (installed to ~/.antidote, sourced from .zshrc)"
     },
     {
       "name": "Starship",
       "id": "starship",
-      "script": "starship.sh",
+      "scripts": "starship",
       "description": "Minimal, blazing-fast cross-shell prompt (installed to /usr/local/bin via official installer)"
     },
     {
       "name": "MesloLGS Nerd Font",
       "id": "nerdfont",
-      "script": "nerdfont.sh",
+      "scripts": "nerdfont",
       "description": "Patched Meslo font with powerline/devicon glyphs needed by starship (installed to ~/.local/share/fonts)"
     },
     {
       "name": "Rust",
       "id": "rust",
-      "script": "rust.sh",
+      "scripts": "rust",
       "description": "Rust toolchain (rustc, cargo) via the official rustup installer (~/.cargo, ~/.rustup)"
     }
   ]
