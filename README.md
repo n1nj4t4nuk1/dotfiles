@@ -52,7 +52,14 @@ Package manifests (`dnf.json`, `flatpak.json`, `pip.json`, `gext.json`) share th
 
 `post-install-commands` is optional. Use it for steps that need to run after installing the package (e.g. `chsh` to change default shell, enabling a systemd unit, etc.).
 
-`other.json` uses `scripts` instead of `install-text`. The value is the **folder name** under `other/` containing at least an `install.sh`. Future helper scripts (update, uninstall, etc.) can live in the same folder.
+`other.json` uses `scripts` instead of `install-text`. The value is the **folder name** under `other/`. The script filename inside that folder depends on which top-level array the entry lives in:
+
+| Section in `other.json` | Script filename | Purpose |
+|---|---|---|
+| `packages` | `install.sh` | Installs a piece of software |
+| `setup` | `setup.sh` | Configures the system (no software install per se) |
+
+Example `packages` entry:
 
 ```json
 {
@@ -62,5 +69,18 @@ Package manifests (`dnf.json`, `flatpak.json`, `pip.json`, `gext.json`) share th
   "description": "Microsoft's cross-platform source code editor"
 }
 ```
+→ script at `apps/<host>/other/vscode/install.sh`.
 
-The install script for the entry above is at `apps/<host>/other/vscode/install.sh`.
+Example `setup` entry:
+
+```json
+{
+  "name": "Flatpak",
+  "id": "flatpak",
+  "scripts": "flatpak",
+  "description": "Adds the flathub remote system-wide"
+}
+```
+→ script at `apps/<host>/other/flatpak/setup.sh`.
+
+Future helper scripts (update, uninstall, etc.) can live alongside the entry-point in the same folder.
