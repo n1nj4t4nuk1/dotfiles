@@ -47,6 +47,12 @@
       "id": "nerdfont",
       "script": "nerdfont.sh",
       "description": "Patched Meslo font with powerline/devicon glyphs needed by starship (installed to ~/.local/share/fonts)"
+    },
+    {
+      "name": "Rust",
+      "id": "rust",
+      "script": "rust.sh",
+      "description": "Rust toolchain (rustc, cargo) via the official rustup installer (~/.cargo, ~/.rustup)"
     }
   ]
 }
