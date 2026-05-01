@@ -64,7 +64,7 @@
       "name": "NVIDIA akmod driver",
       "id": "akmod-nvidia",
       "install-text": "akmod-nvidia",
-      "description": "Auto-rebuilding NVIDIA proprietary driver from RPM Fusion nonfree (requires the rpmfusion-nonfree repo, enabled by other/steam.sh)"
+      "description": "Auto-rebuilding NVIDIA proprietary driver from RPM Fusion nonfree (requires the rpmfusion-nonfree repo, enabled by other/rpmfusion/install.sh)"
     },
     {
       "name": "NVIDIA CUDA userspace libraries",

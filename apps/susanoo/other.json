@@ -1,10 +1,16 @@
 {
   "packages": [
     {
+      "name": "RPM Fusion",
+      "id": "rpmfusion",
+      "scripts": "rpmfusion",
+      "description": "Enables RPM Fusion free and nonfree repositories (required by steam, akmod-nvidia, xorg-x11-drv-nvidia-cuda, etc.)"
+    },
+    {
       "name": "Steam",
       "id": "steam",
       "scripts": "steam",
-      "description": "Gaming platform, launcher and store from Valve"
+      "description": "Gaming platform, launcher and store from Valve (depends on rpmfusion)"
     },
     {
       "name": "GitHub CLI",
