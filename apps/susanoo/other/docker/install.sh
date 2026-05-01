@@ -8,3 +8,4 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo systemctl enable --now docker
 
 sudo groupadd docker
+sudo usermod -aG docker $USER
