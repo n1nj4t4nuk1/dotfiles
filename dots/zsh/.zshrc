@@ -1,5 +1,9 @@
-# Lines configured by zsh-newuser-install
+# History
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-# End of lines configured by zsh-newuser-install
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS HIST_IGNORE_SPACE SHARE_HISTORY
+
+# Antidote — load plugins listed in .zsh_plugins.txt
+source ~/.antidote/antidote.zsh
+antidote load ~/.dotfiles/dots/zsh/.zsh_plugins.txt
