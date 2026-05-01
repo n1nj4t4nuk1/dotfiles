@@ -4,6 +4,7 @@
 # Directory layout
 export DOTFILES_DIR="${0:A:h}"
 export ALIASES_DIR="$DOTFILES_DIR/aliases"
+export COMMANDS_DIR="$DOTFILES_DIR/commands"
 export DOTS_DIR="$DOTFILES_DIR/dots"
 
 # Editors / pager

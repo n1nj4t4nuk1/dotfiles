@@ -7,3 +7,6 @@ source "$DOTFILES_DIR/envvar.sh"
 
 # Aliases
 source "$DOTFILES_DIR/aliases/init.sh"
+
+# Commands (shell functions)
+source "$DOTFILES_DIR/commands/init.sh"
