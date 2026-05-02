@@ -1,0 +1,10 @@
+{
+  "packages": [
+    {
+      "name": "Git",
+      "id": "git",
+      "install-text": "git",
+      "description": "Distributed version control system"
+    }
+  ]
+}

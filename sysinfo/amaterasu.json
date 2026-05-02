@@ -1,0 +1,40 @@
+{
+  "hostname": "amaterasu",
+  "os": {
+    "name": "Fedora Linux",
+    "version": "44",
+    "edition": "Server Edition",
+    "pretty_name": "Fedora Linux 44 (Server Edition)"
+  },
+  "hardware": {
+    "vendor": "SLIMBOOK",
+    "model": "ZERO-V5",
+    "chassis": "desktop",
+    "cpu": {
+      "model": "Intel Core i3-10110U",
+      "cores": 4,
+      "arch": "x86_64"
+    },
+    "memory_gb": 32,
+    "gpu": [
+      {
+        "vendor": "Intel",
+        "model": "UHD Graphics (CometLake-U GT2)"
+      }
+    ],
+    "storage": [
+      {
+        "device": "sdb",
+        "model": "TEAM TM8PS7512G",
+        "size_gb": 512,
+        "type": "ssd"
+      },
+      {
+        "device": "sda",
+        "model": "Seagate ST2000LM015-2E8174",
+        "size_gb": 2000,
+        "type": "hdd"
+      }
+    ]
+  }
+}
