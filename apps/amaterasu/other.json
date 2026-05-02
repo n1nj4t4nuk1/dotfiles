@@ -1,0 +1,10 @@
+{
+  "packages": [
+    {
+      "name": "Docker",
+      "id": "docker",
+      "scripts": "docker",
+      "description": "Docker CE (engine, CLI, containerd, buildx, compose) from Docker's official repo; enables daemon and adds user to docker group"
+    }
+  ]
+}
